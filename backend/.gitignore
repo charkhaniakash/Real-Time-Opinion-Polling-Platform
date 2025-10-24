@@ -1,0 +1,45 @@
+# === Node (Frontend + Backend JS) ===
+node_modules/
+.env
+.env.local
+dist/
+build/
+.cache/
+coverage/
+.next/
+.out/
+.vite/
+.turbo/
+
+# === Python (Backend) ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+venv/
+.env/
+ENV/
+env/
+Pipfile.lock
+
+# === System ===
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+
+# === IDEs ===
+.vscode/
+.idea/
+*.iml
+
+# === OS ===
+*.bak

@@ -1,0 +1,84 @@
+{
+  "polls": [
+    {
+      "id": "29b2c71e-89ae-46e2-aa63-12b3a312ef03",
+      "title": "Hi How are you ?",
+      "options": [
+        {
+          "id": "e587f40d-c429-4066-bdf4-fb2d44d7068f",
+          "text": "this is ",
+          "vote_count": 0
+        },
+        {
+          "id": "2e0ee91e-9d0d-4d01-8f9e-cd5bb92cd208",
+          "text": "one",
+          "vote_count": 1
+        },
+        {
+          "id": "d2dbdf1d-52c2-423f-86c5-ce1960a257d5",
+          "text": "oke",
+          "vote_count": 0
+        }
+      ],
+      "like_count": 1,
+      "created_at": "2025-10-25T00:18:46.084978",
+      "voted_users": {
+        "user_5swr0divkmh57cnzo": "2e0ee91e-9d0d-4d01-8f9e-cd5bb92cd208"
+      },
+      "liked_users": [
+        "user_5swr0divkmh57cnzo"
+      ]
+    },
+    {
+      "id": "bee19d76-2d4b-4f2f-bc7f-67f06e7a167d",
+      "title": "hello bro",
+      "options": [
+        {
+          "id": "de5fd302-0c06-4d5d-a450-45fe6f87b793",
+          "text": "ok",
+          "vote_count": 0
+        },
+        {
+          "id": "72872605-0011-4acd-bedc-e7f211bf62d4",
+          "text": "what ",
+          "vote_count": 1
+        },
+        {
+          "id": "6c75c076-31a7-4c2b-829d-b592dd54ba27",
+          "text": "ok",
+          "vote_count": 0
+        }
+      ],
+      "like_count": 1,
+      "created_at": "2025-10-25T00:21:01.427151",
+      "voted_users": {
+        "user_5swr0divkmh57cnzo": "72872605-0011-4acd-bedc-e7f211bf62d4"
+      },
+      "liked_users": [
+        "user_5swr0divkmh57cnzo"
+      ]
+    },
+    {
+      "id": "63e51239-3485-4e0b-99ab-a8077e21d995",
+      "title": "erf2ew",
+      "options": [
+        {
+          "id": "3cf05347-0bfb-4a33-90bb-bb2f6796a66c",
+          "text": "f2",
+          "vote_count": 0
+        },
+        {
+          "id": "e2041e6d-8e8a-48aa-8537-917ba33b8b12",
+          "text": "r23",
+          "vote_count": 0
+        }
+      ],
+      "like_count": 1,
+      "created_at": "2025-10-25T00:21:37.576713",
+      "voted_users": {},
+      "liked_users": [
+        "user_5swr0divkmh57cnzo"
+      ]
+    }
+  ]
+}
