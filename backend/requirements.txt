@@ -1,11 +1,10 @@
 pip>=25.1.1
 setuptools>=75.0
 wheel
---prefer-binary
 
-
-fastapi==0.104.1
-uvicorn==0.24.0
-websockets==12.0
-python-multipart==0.0.6
-pydantic==2.5.0
+# Core dependencies
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+websockets==13.1
+python-multipart==0.0.12
+pydantic==2.9.2
