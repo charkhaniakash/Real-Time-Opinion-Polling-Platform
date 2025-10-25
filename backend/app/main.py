@@ -17,7 +17,7 @@ app.add_middleware(
         "http://localhost:3000", 
         "http://127.0.0.1:3000",
         "https://real-time-opinion-polling-platform.onrender.com",
-        "https://real-time-opinion-polling-platform.vercel.app/"
+        "https://real-time-opinion-polling-platform.vercel.app"
     ],  # Frontend URLs
     allow_credentials=True,
     allow_methods=["*"],
