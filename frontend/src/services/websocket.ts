@@ -1,7 +1,23 @@
 import { io, Socket } from 'socket.io-client';
 import { Poll } from '@/store/poll';
 
-const WEBSOCKET_URL = process.env.NEXT_PUBLIC_WS_URL || 'ws://localhost:8000/api/ws';
+// Function to determine the correct WebSocket URL based on environment
+const getWebSocketURL = () => {
+  if (process.env.NEXT_PUBLIC_WS_URL) {
+    console.log("{{{{{{{{", process.env.NEXT_PUBLIC_WS_URL);
+    return process.env.NEXT_PUBLIC_WS_URL;
+  }
+  
+  // For production, use wss:// protocol
+  if (process.env.NODE_ENV === 'production') {
+    return 'wss://real-time-opinion-polling-platform.onrender.com/api/ws';
+  }
+  
+  // For development, use ws:// protocol
+  return 'ws://localhost:8000/api/ws';
+};
+
+const WEBSOCKET_URL = getWebSocketURL();
 
 export interface WebSocketMessage {
   type: string;
@@ -20,7 +36,7 @@ class WebSocketService {
       this.socket = new WebSocket(WEBSOCKET_URL);
 
       this.socket.onopen = () => {
-        console.log('WebSocket connected');
+        console.log('WebSocket connected to:', WEBSOCKET_URL);
         this.reconnectAttempts = 0;
         
         // Send a heartbeat message to keep connection alive
@@ -64,7 +80,7 @@ class WebSocketService {
 
   private sendHeartbeat() {
     if (this.socket && this.socket.readyState === WebSocket.OPEN) {
-      this.socket.send('ping');
+      this.socket.send(JSON.stringify({ type: 'ping' }));
       
       // Schedule next heartbeat
       setTimeout(() => {
